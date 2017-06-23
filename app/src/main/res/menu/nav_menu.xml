@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_output"
+        android:title="@string/item_output_activity" />
+    <item
+        android:id="@+id/item_stats"
+        android:icon="@drawable/ic_assessment_black"
+        android:title="@string/item_stats_activity" />
+
+    <item
+        android:id="@+id/item_api"
+        android:title="@string/item_api_activity" />
+
+    <item
+        android:id="@+id/item_test_plc"
+        android:title="@string/item_title_test_plc" />
+
+    <item
+        android:id="@+id/item_settings"
+        android:icon="@drawable/ic_settings_applications_black"
+        android:title="@string/title_activity_settings" />
+
+    <item
+        android:id="@+id/item_about"
+        android:icon="@drawable/ic_info_black_24px"
+        android:title="@string/about" />
+
+</menu>

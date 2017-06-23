@@ -1,0 +1,187 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.electrolux.denefflo.api_to_phone.TestFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo_in_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/around_logo"
+            android:layout_marginStart="@dimen/around_logo"
+            android:layout_marginTop="@dimen/around_logo"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/logo_content_description"
+            android:scaleType="fitStart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_electrolux_logo_master_blue_rgb" />
+
+        <TextView
+            android:id="@+id/input_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/plc_text_input"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21sp"
+            app:layout_constraintLeft_toLeftOf="@+id/logo_in_test"
+            app:layout_constraintRight_toRightOf="@+id/logo_in_test"
+            app:layout_constraintTop_toBottomOf="@+id/logo_in_test" />
+
+        <LinearLayout
+            android:id="@+id/input_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@+id/input_test"
+            app:layout_constraintRight_toRightOf="@+id/input_test"
+            app:layout_constraintTop_toBottomOf="@+id/input_test">
+
+            <EditText
+                android:id="@+id/input_var_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:labelFor="@id/input_var_address"
+                android:text="@string/test_edit_var_address" />
+
+            <EditText
+                android:id="@+id/input_type_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:labelFor="@id/input_type_data"
+                android:text="@string/test_edit_type_data" />
+
+            <TextView
+                android:id="@+id/input_result"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/input_bool_on_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/io_pic_description"
+                android:scaleType="fitStart"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_circle_red_io" />
+
+            <Button
+                android:id="@+id/input_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_button_read"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/output_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/plc_text_output"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21sp"
+            app:layout_constraintLeft_toLeftOf="@id/input_row"
+            app:layout_constraintRight_toRightOf="@id/input_row"
+            app:layout_constraintTop_toBottomOf="@+id/input_row" />
+
+        <LinearLayout
+            android:id="@+id/output_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="@id/output_test"
+            app:layout_constraintRight_toRightOf="@id/output_test"
+            app:layout_constraintTop_toBottomOf="@id/output_test">
+
+
+            <EditText
+                android:id="@+id/output_var_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:labelFor="@id/output_var_address"
+                android:text="@string/test_edit_var_address" />
+
+            <EditText
+                android:id="@+id/output_type_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:labelFor="@id/output_type_data"
+                android:text="@string/test_edit_type_data" />
+
+            <EditText
+                android:id="@+id/output_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:inputType="textPersonName"
+                android:labelFor="@id/output_data"
+                android:text="@string/test_edit_data" />
+
+            <TextView
+                android:id="@+id/output_result"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/output_bool_on_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/io_pic_description"
+                android:scaleType="fitStart"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_circle_red_io" />
+
+            <Button
+                android:id="@+id/output_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_button_write"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

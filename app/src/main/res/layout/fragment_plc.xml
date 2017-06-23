@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.electrolux.denefflo.api_to_phone.PlcFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logoElectrolux"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/around_logo"
+                android:layout_marginStart="@dimen/around_logo"
+                android:layout_marginTop="@dimen/around_logo"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/logo_content_description"
+                android:scaleType="fitStart"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_electrolux_logo_master_blue_rgb" />
+
+            <TextView
+                android:id="@+id/input_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/plc_text_input"
+                android:textColor="@color/colorPrimary"
+                android:textSize="21sp"
+                app:layout_constraintLeft_toLeftOf="@+id/logoElectrolux"
+                app:layout_constraintRight_toRightOf="@+id/logoElectrolux"
+                app:layout_constraintTop_toBottomOf="@+id/logoElectrolux" />
+
+            <TableLayout
+                android:id="@+id/input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/input_text"
+                app:layout_constraintRight_toRightOf="@+id/input_text"
+                app:layout_constraintTop_toBottomOf="@+id/input_text">
+
+                <!--<TableRow
+                    android:id="@+id/firstRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/read_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/text_size"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/readInPlc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="@dimen/text_size"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/pic_read_io"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/io_pic_description"
+                        android:scaleType="fitStart"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_circle_red_io" />
+
+                    <Button
+                        android:id="@+id/readButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_button_read" />
+
+                </TableRow>-->
+
+            </TableLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
