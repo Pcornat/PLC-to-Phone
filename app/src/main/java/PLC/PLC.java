@@ -14,6 +14,9 @@ import Moka7.S7Client;
  * This is the base class of this package, all of the common methods and fields are inside it.
  */
 abstract class PLC extends S7Client implements Parcelable {
+    /**
+     * Field which from the class is created from a Parcel
+     */
     public static final Creator<PLC> CREATOR = new Creator<PLC>() {
         @Override
         public PLC createFromParcel(Parcel in) {
@@ -61,8 +64,8 @@ abstract class PLC extends S7Client implements Parcelable {
             errS7DataWrite,
             errS7BufferTooSmall
     };
-    //This array contains all of the id of the corresponding error message.
     private int word = 1, messageErr = 0;
+    //This array contains all of the id of the corresponding error message.
     /**
      * The different messages of their corresponding error code. Each on of them is at the same index
      * as the error code.
@@ -169,6 +172,9 @@ abstract class PLC extends S7Client implements Parcelable {
         return password;
     }
 
+    /**
+     * @return if the plc object will just connect or connect and do its thing
+     */
     public boolean isSimpleConnect() {
         return simpleConnect;
     }
@@ -221,7 +227,6 @@ abstract class PLC extends S7Client implements Parcelable {
         this.typeData = typeData;
     }
 
-
     /**
      * Get the error message to display
      *
@@ -231,10 +236,8 @@ abstract class PLC extends S7Client implements Parcelable {
         return messageErr;
     }
 
-
     /**
      * Set the different fields of the object
-     * <p>
      *
      * @param varAddress the address you want to set (if you control more than one PLC for example)
      * @param typeData   the type of data you want to read or write, it is very important !
