@@ -14,7 +14,6 @@ import Moka7.S7Client;
  * This is the base class of this package, all of the common methods and fields are inside it.
  */
 abstract class PLC extends S7Client implements Parcelable {
-
     /**
      * Field which from the class is created from a Parcel
      */
