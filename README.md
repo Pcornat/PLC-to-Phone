@@ -1,6 +1,5 @@
-#A subject during my internship.
-
-**It was for a company that I cannot write the name**
+# A subject during my internship.
+## It was for a company that I cannot write the name
 
 The goal of this project was to communicate between a smartphone and a Siemens's PLC. The second 
 goal, the one I made myself, was to create a library to simplify the use of Moka7 in Android.
