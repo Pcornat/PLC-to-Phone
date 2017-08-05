@@ -10,7 +10,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/logo_in_test"
+            android:id="@+id/logo_test"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/around_logo"
@@ -32,9 +32,9 @@
             android:text="@string/plc_text_input"
             android:textColor="@color/colorPrimary"
             android:textSize="21sp"
-            app:layout_constraintLeft_toLeftOf="@+id/logo_in_test"
-            app:layout_constraintRight_toRightOf="@+id/logo_in_test"
-            app:layout_constraintTop_toBottomOf="@+id/logo_in_test" />
+            app:layout_constraintLeft_toLeftOf="@id/logo_test"
+            app:layout_constraintRight_toRightOf="@id/logo_test"
+            app:layout_constraintTop_toBottomOf="@id/logo_test" />
 
         <LinearLayout
             android:id="@+id/input_row"

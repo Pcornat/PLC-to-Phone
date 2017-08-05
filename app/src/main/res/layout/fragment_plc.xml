@@ -14,7 +14,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/logoElectrolux"
+                android:id="@+id/logo_plc"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/around_logo"
@@ -37,9 +37,9 @@
                 android:text="@string/plc_text_input"
                 android:textColor="@color/colorPrimary"
                 android:textSize="21sp"
-                app:layout_constraintLeft_toLeftOf="@+id/logoElectrolux"
-                app:layout_constraintRight_toRightOf="@+id/logoElectrolux"
-                app:layout_constraintTop_toBottomOf="@+id/logoElectrolux" />
+                app:layout_constraintLeft_toLeftOf="@id/logo_plc"
+                app:layout_constraintRight_toRightOf="@id/logo_plc"
+                app:layout_constraintTop_toBottomOf="@id/logo_plc" />
 
             <TableLayout
                 android:id="@+id/input"

@@ -175,7 +175,7 @@ abstract class PLC extends S7Client implements Parcelable {
     /**
      * @return if the plc object will just connect or connect and do its thing
      */
-    public boolean isSimpleConnect() {
+    public final boolean isSimpleConnect() {
         return simpleConnect;
     }
 

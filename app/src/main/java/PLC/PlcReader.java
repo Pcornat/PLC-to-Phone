@@ -90,7 +90,7 @@ public class PlcReader extends PlcReaderNoThread implements Parcelable {
         textView.setText(text);
     }
 
-    public String getText() {
+    public final String getText() {
         return text;
     }
 
