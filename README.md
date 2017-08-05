@@ -1,2 +1,2 @@
-## ForElectrolux
-A subject during my internship in Electrolux.
+## For a company
+A subject during my internship.
