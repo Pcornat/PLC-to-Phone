@@ -1,4 +1,4 @@
-package com.electrolux.denefflo.api_to_phone;
+package com.example.denefflo.api_to_phone;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

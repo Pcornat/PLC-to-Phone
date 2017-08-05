@@ -8,3 +8,5 @@
 /captures
 .externalNativeBuild
 /keystore.properties
+/app/src/main/res/drawable/ic_logo_master_blue_rgb.xml
+/app/src/main/res/drawable/ic_round.xml

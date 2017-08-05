@@ -45,7 +45,7 @@
     <string name="consummed_energy">Energy consummed</string>
     <string name="text_button_read">Read</string>
     <string name="text_button_write">Write</string>
-    <string name="logo_content_description">Electrolux logo</string>
+    <string name="logo_content_description">Logo</string>
     <string name="pref_title_autorefresh">Automatic refresh of variables</string>
     <string name="pref_summary_autorefresh">Switch it so the data refreshes alone</string>
     <string name="pref_key_autorefresh" translatable="false">refresh_switch</string>

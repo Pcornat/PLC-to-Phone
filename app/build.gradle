@@ -24,7 +24,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion '26.0.0'
     defaultConfig {
-        applicationId 'com.electrolux.denefflorent.api_to_phone'
+        applicationId 'com.example.denefflorent.api_to_phone'
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1

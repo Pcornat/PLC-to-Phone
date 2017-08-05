@@ -26,7 +26,7 @@
     <string name="consummed_energy">Énergie consommée</string>
     <string name="text_button_read">Lire</string>
     <string name="text_button_write">Écrire</string>
-    <string name="logo_content_description">Logo d\'Electrolux</string>
+    <string name="logo_content_description">Logo</string>
     <string name="pref_title_autorefresh">Rafraîchissement automatique des variables</string>
     <string name="pref_summary_autorefresh">Pour que les données se rafraîchissent seules</string>
     <string name="pref_category_title">Utilité</string>

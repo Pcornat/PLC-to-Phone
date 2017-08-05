@@ -1,4 +1,4 @@
-package com.electrolux.denefflo.api_to_phone;
+package com.example.denefflo.api_to_phone;
 
 import android.content.DialogInterface;
 import android.content.Intent;

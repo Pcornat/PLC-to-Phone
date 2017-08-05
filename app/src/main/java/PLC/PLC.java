@@ -5,7 +5,7 @@ import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import com.electrolux.denefflo.api_to_phone.R;
+import com.example.denefflo.api_to_phone.R;
 
 import Moka7.S7;
 import Moka7.S7Client;

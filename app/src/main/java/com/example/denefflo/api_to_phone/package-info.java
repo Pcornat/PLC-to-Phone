@@ -3,4 +3,4 @@
  *
  * @author Denef Florent
  */
-package com.electrolux.denefflo.api_to_phone;
+package com.example.denefflo.api_to_phone;

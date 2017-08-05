@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.electrolux.denefflo.api_to_phone.MainActivity"
+    tools:context="com.example.denefflo.api_to_phone.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <ImageView
@@ -24,7 +24,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_electrolux_logo_master_blue_rgb" />
+        app:srcCompat="@drawable/ic_logo_master_blue_rgb" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

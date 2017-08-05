@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.electrolux.denefflo.api_to_phone.AboutActivity">
+    tools:context="com.example.denefflo.api_to_phone.AboutActivity">
 
     <include layout="@layout/toolbar" />
 
