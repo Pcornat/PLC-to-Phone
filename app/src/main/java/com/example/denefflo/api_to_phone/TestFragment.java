@@ -234,7 +234,7 @@ public class TestFragment extends Fragment implements View.OnClickListener {
                         @Override
                         protected Object doInBackground(Object... objects) {
                             plcReader.setTextView(readTextView);
-                            plcReader.run();
+                            plcReader.Read();
                             return plcReader.getMessageErr() == 0;
                         }
 
@@ -273,11 +273,11 @@ public class TestFragment extends Fragment implements View.OnClickListener {
                         protected Object doInBackground(Object... objects) {
                             plcReader.setTextView(writeTextView);
                             plcReader.setFields(plcWriter.getVarAddress(), plcWriter.getTypeData());
-                            plcWriter.run();
+                            plcWriter.Write();
                             if (plcWriter.getMessageErr() != 0) {
                                 return false;
                             } else {
-                                plcReader.run();
+                                plcReader.Read();
                                 return true;
                             }
                         }

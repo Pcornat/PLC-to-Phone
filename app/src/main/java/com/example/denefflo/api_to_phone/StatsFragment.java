@@ -124,7 +124,7 @@ public class StatsFragment extends Fragment {
                             @Override
                             public void run() {
                                 try {
-                                    plcReader.run();
+                                    plcReader.Read();
                                     if (plcReader.getMessageErr() != 0)
                                         dealError(plcReader.getMessageErr());
                                     else {

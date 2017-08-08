@@ -94,14 +94,15 @@ public class PlcReader extends PlcReaderNoThread implements Parcelable {
         return text;
     }
 
-    public void run() {
+    @Override
+    public void Read() {
         try {
             if (!connected) {
                 ConnectTo();
                 if (getMessageErr() == 0) {
                     connected = !connected;
                     if (!simpleConnect)
-                        Read();
+                        super.Read();
                     if (disconnect) {
                         Disconnect();
                         connected = !connected;

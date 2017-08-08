@@ -87,14 +87,15 @@ public class PlcWriter extends PlcWriterNoThread implements Parcelable {
         return 0;
     }
 
-    public void run() {
+    @Override
+    public void Write() {
         try {
             if (!connected) {
                 ConnectTo();
                 if (getMessageErr() == 0) {
                     connected = !connected;
                     if (!simpleConnect)
-                        Write();
+                        super.Write();
                     if (disconnect) {
                         Disconnect();
                         connected = !connected;

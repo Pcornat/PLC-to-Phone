@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements
             new AsyncTask<Object, Object, Object>() {
                 @Override
                 protected Object doInBackground(Object... objects) {
-                    plcWriter.run();
+                    plcWriter.Write();
                     return plcWriter.getMessageErr() == 0;
                 }
 

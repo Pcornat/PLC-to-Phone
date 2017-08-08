@@ -371,7 +371,7 @@ public class PlcFragment extends Fragment implements View.OnClickListener {
                 final byte finalI = i;
                 plcReaders.get(finalI).setSimpleConnect(false);
                 try {
-                    plcReaders.get(finalI).run();
+                    plcReaders.get(finalI).Read();
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -450,7 +450,7 @@ public class PlcFragment extends Fragment implements View.OnClickListener {
                     new AsyncTask<Object, Object, Object>() {
                         @Override
                         protected Object doInBackground(Object... objects) {
-                            plcReaders.get(finalI).run();
+                            plcReaders.get(finalI).Read();
                             return plcReaders.get(finalI).getMessageErr() == 0;
                         }
 
